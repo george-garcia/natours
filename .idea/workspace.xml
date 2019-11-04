@@ -4,6 +4,12 @@
     <list default="true" id="e286a154-90e5-4027-9167-694b93d8c2b9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/tourController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/tourController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/userController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/tourRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/tourRoutes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/userRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/userRoutes.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +25,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -56,6 +63,9 @@
       <workItem from="1572554623103" duration="4243000" />
       <workItem from="1572639026963" duration="2600000" />
       <workItem from="1572701796104" duration="15186000" />
+      <workItem from="1572791348195" duration="623000" />
+      <workItem from="1572805940517" duration="8935000" />
+      <workItem from="1572828076792" duration="2916000" />
     </task>
     <servers />
   </component>
