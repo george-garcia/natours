@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/tourController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/tourController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/tourRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/tourRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,7 +19,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../jsx" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunDashboard">
@@ -67,7 +66,8 @@
       <workItem from="1573005221265" duration="5496000" />
       <workItem from="1573015580494" duration="2986000" />
       <workItem from="1573051851776" duration="479000" />
-      <workItem from="1573086632085" duration="1950000" />
+      <workItem from="1573086632085" duration="11002000" />
+      <workItem from="1573140793988" duration="2050000" />
     </task>
     <servers />
   </component>
