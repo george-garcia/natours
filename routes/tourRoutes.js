@@ -8,7 +8,7 @@ const tourController = require('../controllers/tourController');
 //define our routers
 const router = express.Router();
 
-router.param('id', tourController.checkID);
+// router.param('id', tourController.checkID);
 
 //create a checkbody middlware
 //check if body contains a name and price property
@@ -19,7 +19,7 @@ router.param('id', tourController.checkID);
 
 router.route('/')
     .get(tourController.getTours)
-    .post(tourController.checkBody, tourController.createTour);
+    .post(tourController.createTour);
 
 router.route('/:id')
     .get(tourController.getTour)
