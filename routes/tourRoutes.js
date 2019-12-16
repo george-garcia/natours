@@ -8,6 +8,8 @@ const tourController = require('../controllers/tourController');
 //define our routers
 const router = express.Router();
 
+router.route('/top-5-cheap').get(tourController.aliasTopTours ,tourController.getAllTours)
+
 // router.param('id', tourController.checkID);
 
 //create a checkbody middlware
