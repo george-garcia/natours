@@ -8,6 +8,7 @@ const tourSchema = new mongoose.Schema({
         unique: true,
         trim: true
     },
+    slug: String,
     duration: {
         type: Number,
         required: [true, "a tour must have a duration"]
@@ -52,6 +53,26 @@ const tourSchema = new mongoose.Schema({
         default: Date.now()
     },
     startDates: [Date]
+}, {
+    toJSON: { virtuals: true },
+    toObject: { virtuals: true}
+});
+
+VIRTUALS
+tourSchema.virtual('durationWeeks').get(function(next) {
+    return this.duration / 7;
+});
+
+//DOCUMENT MIDDLEWARE runs before .save() command and the .create() command
+//however it does not run on .insertMany because .insertMany will not trigger the .save() command
+tourSchema.pre('save', function (next) {
+    this.slug = slugify(this.name, { lower: true });
+    next();
+});
+
+tourSchema.post('save', function (doc, next) {
+    console.log(doc);
+    next();
 });
 
 const Tour = new mongoose.model('Tour', tourSchema);

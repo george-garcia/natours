@@ -19,6 +19,7 @@ exports.aliasTopTours = async (req, res, next) =>{
 exports.getTour = async (req, res) =>{
 
     try{
+        console.log(req.params.id);
         const tour = await Tour.findById(req.params.id);
         //Tour.findOne({ _id: req.params.id })
 
@@ -301,8 +302,21 @@ exports.getMonthlyPlan = async (req, res) => {
             {
                 $group: {
                     _id: { $month: '$startDates' },
-                    numTourStarts: { $add: 1 }
+                    numTourStarts: { $sum: 1 },
+                    tours: { $push: '$name' }
                 }
+            },
+            {
+                $addFields: { month: '$_id'}
+            },
+            {
+                $project: { _id: 0 }
+            },
+            {
+                $sort: { numTourStarts: -1 }
+            },
+            {
+                $limit: 12
             }
         ]);
 
