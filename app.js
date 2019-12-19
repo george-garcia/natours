@@ -13,6 +13,28 @@ if(process.env.NODE_ENV === 'development'){
     app.use(morgan('dev'));
 }
 
+app.use((req, res, next) => {
+    console.log('Hello from the middleware');
+    next();
+});
+
+app.all('*', (req, res, next) => {
+    res.status(404).json({
+        status: 'fail',
+        message: `Can't find ${req.OriginalUrl} on this server.`
+    });
+});
+
+app.use((err, req, res, next) => {
+    err.statusCode = err.statusCode || 500;
+    err.status = err.status || 'error';
+
+    res.status(err.statusCode).json({
+        status: err.status,
+        message: err.message
+    })
+});
+
 const tourRouter = require('./routes/tourRoutes');
 const userRouter = require('./routes/userRoutes');
 

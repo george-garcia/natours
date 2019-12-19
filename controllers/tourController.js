@@ -19,7 +19,6 @@ exports.aliasTopTours = async (req, res, next) =>{
 exports.getTour = async (req, res) =>{
 
     try{
-        console.log(req.params.id);
         const tour = await Tour.findById(req.params.id);
         //Tour.findOne({ _id: req.params.id })
 
@@ -113,9 +112,6 @@ exports.getAllTours = async (req, res) =>{
         //EXECUTE QUERY
         const features = new APIFeatures(Tour.find(), req.query).filter().sort().limitFields().paginate();
         const tours = await features.query;
-
-        console.log(features);
-        console.log(features.query);
         //query.sort().select().skip().limit()
 
 

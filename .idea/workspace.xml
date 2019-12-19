@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e286a154-90e5-4027-9167-694b93d8c2b9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/tourController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/tourController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/tourModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/tourModel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
@@ -40,13 +41,40 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/app.js" working-dir="$PROJECT_DIR$">
+  <component name="RunManager" selected="Node.js.app.js">
+    <configuration name="app.js JavaScript" type="JavascriptDebugType" engineId="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" uri="http://blah">
       <method v="2" />
     </configuration>
+    <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="app.js" working-dir="$PROJECT_DIR$">
+      <EXTENSION ID="com.jetbrains.nodejs.run.NodeJSStartBrowserRunConfigurationExtension">
+        <browser name="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" start="true" with-js-debugger="true" url="http://blah" />
+      </EXTENSION>
+      <method v="2" />
+    </configuration>
+    <configuration name="tourController.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/controllers/tourController.js" working-dir="$PROJECT_DIR$/controllers">
+      <method v="2" />
+    </configuration>
+    <configuration name="start:dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start:dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Node.js.app.js" />
+      <item itemvalue="Node.js.tourController.js" />
+      <item itemvalue="npm.start:dev" />
+      <item itemvalue="JavaScript Debug.app.js JavaScript" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Node.js.app.js" />
+        <item itemvalue="Node.js.tourController.js" />
+        <item itemvalue="npm.start:dev" />
       </list>
     </recent_temporary>
   </component>
@@ -82,6 +110,9 @@
       <workItem from="1576472578351" duration="5795000" />
       <workItem from="1576560003557" duration="6417000" />
       <workItem from="1576620481964" duration="658000" />
+      <workItem from="1576635364124" duration="4457000" />
+      <workItem from="1576654408550" duration="2762000" />
+      <workItem from="1576697944019" duration="6461000" />
     </task>
     <servers />
   </component>
