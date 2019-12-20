@@ -2,12 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e286a154-90e5-4027-9167-694b93d8c2b9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/controllers/errorController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/catchAsync.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/authController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/userModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bcryptjs/externs/bcrypt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bcryptjs/externs/minimal-env.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bcryptjs/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bcryptjs/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bcryptjs/scripts/build.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bcryptjs/src/bcrypt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bcryptjs/src/bcrypt/impl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bcryptjs/src/bcrypt/prng/accum.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bcryptjs/src/bcrypt/prng/isaac.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bcryptjs/src/bcrypt/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bcryptjs/src/bcrypt/util/base64.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bcryptjs/src/wrap.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/tourController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/tourController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/appError.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/appError.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/errorController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/errorController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/userRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/userRoutes.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,10 +78,10 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="JavaScript Debug.app.js JavaScript" />
       <item itemvalue="Node.js.app.js" />
       <item itemvalue="Node.js.tourController.js" />
       <item itemvalue="npm.start:dev" />
-      <item itemvalue="JavaScript Debug.app.js JavaScript" />
     </list>
     <recent_temporary>
       <list>
@@ -112,7 +125,9 @@
       <workItem from="1576620481964" duration="658000" />
       <workItem from="1576635364124" duration="4457000" />
       <workItem from="1576654408550" duration="2762000" />
-      <workItem from="1576697944019" duration="16434000" />
+      <workItem from="1576697944019" duration="16667000" />
+      <workItem from="1576793017505" duration="3125000" />
+      <workItem from="1576802098002" duration="11265000" />
     </task>
     <servers />
   </component>
