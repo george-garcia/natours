@@ -57,6 +57,17 @@ userSchema.pre('save', async function(next){
     next();
 });
 
+userSchema.pre('save', function(next){
+    if(!this.isModified('password') || this.isNew) return next();
+
+    //We subtract 1 second from the date because there is some timing issues between
+    //When this variable being saved and when the json web token is actually saved
+    //If this gets saved after the token is issued then the user won't be able
+    //to actually use their token
+    this.passwordChangedAt = Date.now() - 1000;
+    next();
+});
+
 userSchema.methods.correctPassword = async function(candidatePassword, userPassword) {
     return await bcrypt.compare(candidatePassword, userPassword);
 };
