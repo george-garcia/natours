@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e286a154-90e5-4027-9167-694b93d8c2b9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/node_modules/express-rate-limit/lib/express-rate-limit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/express-rate-limit/lib/memory-store.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/express-rate-limit/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/helmet/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/helmet/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/express-mongo-sanitize/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/express-mongo-sanitize/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/express-mongo-sanitize/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xss-clean/lib/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xss-clean/lib/xss.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xss-clean/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/authController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/authController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/userController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/tourModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/tourModel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
@@ -132,7 +132,10 @@
       <workItem from="1577253178448" duration="1245000" />
       <workItem from="1577285909033" duration="2581000" />
       <workItem from="1577294677339" duration="82000" />
-      <workItem from="1577311445196" duration="2080000" />
+      <workItem from="1577311445196" duration="3444000" />
+      <workItem from="1577392694375" duration="599000" />
+      <workItem from="1577402713006" duration="696000" />
+      <workItem from="1577422304136" duration="2127000" />
     </task>
     <servers />
   </component>
