@@ -1,6 +1,7 @@
 const slugify = require('slugify');
 const mongoose = require('mongoose');
 const validator = require('validator');
+const User = require('./userModel');
 
 const tourSchema = new mongoose.Schema({
     name: {
@@ -89,18 +90,28 @@ const tourSchema = new mongoose.Schema({
         address: String,
         description: String
     },
-    locations: {
-        type: {
-            type: String,
-            default: 'Point',
-            enum: 'Point'
-        },
-        coordinates: [Number],
-        address: String,
-        description: String,
-        day: Number
+    locations: [
+        {
+            type: {
+                type: String,
+                default: 'Point',
+                enum: ['Point']
+            },
+            coordinates: [Number],
+            address: String,
+            description: String,
+            day: Number
         }
-    }
+    ],
+    // this is how we set it up to work with embedded documents
+    // instead of referenced documents
+    // guides: Array
+    guides: [
+        {
+            type: mongoose.Schema.ObjectId,
+            ref: 'User'
+        }
+    ]
 }, {
     toJSON: { virtuals: true },
     toObject: { virtuals: true}
@@ -109,6 +120,13 @@ const tourSchema = new mongoose.Schema({
 //VIRTUALS
 tourSchema.virtual('durationWeeks').get(function(next) {
     return this.duration / 7;
+});
+
+// Virtual populate
+tourSchema.virtual('reviews', {
+    ref: 'Review',
+    foreignField: 'tour',
+    localField: '_id'
 });
 
 //DOCUMENT MIDDLEWARE runs before .save() command and the .create() command
@@ -139,6 +157,23 @@ tourSchema.pre('aggregate', function(next){
     this.pipeline().unshift({ $match: { secretTour: { $ne: true } } });
     next();
 });
+
+tourSchema.pre(/^find/, function(next){
+    this.populate({
+        path: 'guides',
+        select: '-__v -passwordChangedAt'
+    });
+    next();
+});
+
+// this code is responsible for embedding ID's into our tours
+// tourSchema.pre('save', async function (next) {
+//     const guidesPromises = this.guides.map(async id => {
+//         await User.findById(id);
+//     });
+//     this.guides = await Promise.all(guidesPromises);
+//     next();
+// });
 
 const Tour = new mongoose.model('Tour', tourSchema);
 

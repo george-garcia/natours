@@ -20,7 +20,15 @@ exports.aliasTopTours = async (req, res, next) =>{
 //var that holds our route to get back data from a single tour
 exports.getTour = catchAsync(async (req, res, next) =>{
 
-    const tour = await Tour.findById(req.params.id);
+    // this is how we set up our query originally to populate our referenced user IDs
+    // to instead show the whole user object when I search through tours
+    // const tour = await Tour.findById(req.params.id).populate({
+    //     path: 'guides',
+    //     select: '-__v -passwordChangedAt'
+    // });
+
+    const tour = await Tour.findById(req.params.id).populate('reviews');
+
     //Tour.findOne({ _id: req.params.id })
 
     if (!tour){
