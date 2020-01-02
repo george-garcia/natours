@@ -351,3 +351,40 @@ exports.getMonthlyPlan = catchAsync(async (req, res, next) => {
 //     }
 //     next();
 // };
+
+exports.getToursWithin = catchAsync(async (req, res, next) => {
+// We could have done the URL more how a standard filter query would look like
+// /tours-within?distance=233&center=-40,45&unit=mi
+//
+// However instead we choose to write it like this
+// /tours-within/233/center/-40,45/unit/mi
+
+    const { distance, latlng, unit } = req.params;
+    const [lat, lng] = latlng.split(',');
+
+    //radius of earth in miles
+    const earthRadiusMiles = 3963.2;
+    //radius of earth in kilometers
+    const earthRadiusKilos = 6378.1;
+
+    const radius = unit === 'mi' ? distance / earthRadiusMiles : distance / earthRadiusKilos;
+
+    if(!lat || !lng){
+        next(new AppError('Please provide latitude and longitude in the format of lat,lng.', 400));
+    }
+
+    console.log(distance, lat, lng, unit);
+
+    const tours = await Tour.find({
+        startLocation: { $geoWithin: { $centerSphere: [[lng, lat], radius ]}}
+    });
+
+    res.status(200).json({
+        status: 'success',
+        results: tours.length,
+        data: {
+            data: tours
+        }
+    });
+
+});
