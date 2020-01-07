@@ -7,10 +7,17 @@ const rateLimit = require('express-rate-limit');
 const helmet = require('helmet');
 const mongoSanitize = require('express-mongo-sanitize');
 const xss = require('xss-clean');
+const cors = require('cors');
 
 const app = express();
 
 //GLOBAL MIDDLEWARE
+
+//cors for use with our front-end
+app.use(cors({
+    origin: 'http://localhost:3000'
+}));
+
 //middleware that allows with logging
 
 //set security http headers
